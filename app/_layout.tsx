@@ -5,7 +5,8 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-    <Slot   screenOptions={{
+    <Slot   
+      screenOptions={{
       title: 'SpotOn',
       headerStyle: {
         backgroundColor: '#f4511e',
@@ -14,8 +15,9 @@ export default function RootLayout() {
       headerTitleStyle: {
         fontWeight: 'bold',
       },
+      headerTitleAlign: 'center',
     }}
-  />
+    />
   </GestureHandlerRootView>
   );
 }
